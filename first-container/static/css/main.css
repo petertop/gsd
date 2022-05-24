@@ -1,47 +1,46 @@
-body {
-  margin:0;
-  padding:0;
-  background-color:#ffffff;
-}
-
-div.main { 
+header, footer {
+  background-color:#52AE30;
+  color: #ddd;
+  padding: 20px;
   text-align: center;
 }
-
-div.main img {
-  margin: 40px 0;
+aside{
+  padding-top: 10px;
+  font-weight:bold;
 }
 
-div.content {   
-  color:#1f1f1f; 
+.title {
+  color:darkblue;
 }
-.content #message {
-  margin: 10px 0 50px 0;
-  padding: 30px 0;  
-  font-family: 'Ubuntu', sans-serif;
-  font-weight: 300;
-  font-size: 40pt;
-  background-color: #F15B2A;
-  border-top: 2px solid #ffffff;
-  border-bottom: 2px solid #ffffff;
+#numberMessage, #numberJQMessage
+{
+  color: red;    
+}
+#orderList{
+  color: green;
 }
 
-.content #info {
-  margin: 0 auto;
-  font-family: 'Ubuntu', sans-serif;
-  font-weight: 300;
-  font-size: 12pt;
+nav{
+  background-color: #222;
 }
 
-.content #info table {
-  margin: 10px auto;
+section, article {
+  padding: 10px;
+  background-color: #eee;
+}
+label{
+  padding: 0 10px;
+  width: 100px;
+}
+@page {
+position:relative;
+media:print;
 }
 
-.content #info table th {
-  text-align: right;
-  padding-right: 20px;
+.test {
+  background-color: var(--something);
 }
 
-.content #info table td {
-  text-align: left;
+:root {
+  --something: red;
 }

@@ -9,8 +9,8 @@ app.set('view engine', 'handlebars');
 app.use(express.static('static'));
 app.use(morgan('combined'));
 
-var port = process.env.PORT || 8080;
-var message = process.env.MESSAGE || "Have a blast learning Docker!";
+var port = process.env.PORT || 80;
+var message = process.env.MESSAGE || "Welcome to SKB DevOps!";
 
 app.get('/', function (req, res) {
     res.render('home', {

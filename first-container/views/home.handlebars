@@ -1,12 +1,116 @@
-<div id="message">
-  {{ message }}
-</div>
-<div id="info">
-  <table>
-    <tr>
-      <th>Pod/container/host that serviced this request:</th>
-      <td>{{ hostName }}</td>
-    </tr>
-  </table>
+<body>
+  <div>
+    <header class="container-fluid">
+      <div class="row">
+        <div class="col-sm-12">
+          <h1>SKB DevOps</h1>
+        </div>
+      </div>
+    </header>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-sm-3">
+          <aside>
+            <p>Multi-channel Identity Verification made Easy</p>
+            <p></p>
+            <h2 class="title">Why</h2>
+            <p>Know Your Customer, alternatively known as know your client or simply KYC, is the process of a business
+              verifying the identity of its clients and assessing their suitability, along with the potential risks of
+              illegal intentions towards the business relationship. The term is also used to refer to the bank
+              regulations and anti-money laundering regulations that govern these activities.</p>
+            <p></p>
+          </aside>
+        </div>
 
-</div>
+        <div class="col-sm-6">
+          <section>
+            <article>
+              <h2>Standards</h2>
+              <p>{{ message }}</p>
+              <p>The objective of KYC guidelines is to prevent businesses (financial and non-financial) from being used,
+                intentionally or unintentionally, by criminal elements for money laundering activities.</p>
+              <ul>
+                <li>Customer Acceptance Policy</li>
+                <li>Customer Identification Procedures</li>
+                <li>Monitoring of Transactions</li>
+                <li><a href="https://www.rsa.com/en-us/discover/digital-risk-management">Risk management</a></li>
+              </ul>
+              <p></p>
+            </article>
+            <article>
+              <h2>Typical controls</h2>
+              <p>KYC controls typically include the following:</p>
+              <ul>
+                <li>Collection and analysis of basic personally identifiable information (PII).</li>
+                <li>Screening of identity particulars (PII) against global watch-lists to determine the status of public
+                  exposure (politically exposed person or PEP) and adverse media.</li>
+                <li>Determination of the customer's risk in terms of the tendency to commit money laundering, terrorist
+                  finance, or identity theft.</li>
+                <li>Creation and assessment of a "Customer Profile" on the basis of a customer's transactional
+                  behaviour.</li>
+              </ul>
+              <p></p>
+            </article>
+            <article>
+              <h2>Add Customer</h2>
+              <p>Fulfill below form and press 'Submit':</p>
+              <p></p>
+              <input id="smallNumber" type="number">
+              <p id="numberMessage"></p>
+              <button onclick="checkNumber()">Submit</button>
+              <p></p>
+            </article>
+
+          </section>
+        </div>
+
+        <div class="col-sm-3">
+          <aside>
+            <h2 class="title">Order of tasks to get new Customer</h2>
+            <p>Tasks for New Customer to follow:</p>
+            <ol id=orderList>
+              <li>Create New Customer</li>
+              <li>Execute controls</li>
+              <li>Assigne finance model</li>
+            </ol>
+            <p></p>
+          </aside>
+          <aside>
+            <h2 class="title">JQuery Demo</h2>
+            <div class="row">
+              <div class="col-sm-12">
+                <input id="smallJQNumber" type="text">
+                <p id="numberJQMessage"></p>
+                <button onclick="checkNumberByJQuery()">Check Number</button>
+                <button onclick="invokeCreateEvalText()">createEvalText</button>
+                <button onclick="printPage()">Print</button>
+              </div>
+            </div>
+            <p></p>
+          </aside>
+          <aside>
+            <h2 class="title">JQuery API Result</h2>
+            <div class="row">
+              <div class="col-sm-12">
+                <p>Api Result:</p>
+                <p id="apiResult"></p>
+              </div>
+            </div>
+            <p></p>
+          </aside>
+        </div>
+
+      </div>
+    </div>
+
+    <footer class="container-fluid">
+      <table>
+            <tr>Copyright 2020, <a href="https://www.skb.si/">SKB banka</a></tr>
+            <tr>
+              Pod/container/host that serviced this request: {{ hostName }}
+            </tr>
+          </table>
+    </footer>
+
+  </div>
+</body>
